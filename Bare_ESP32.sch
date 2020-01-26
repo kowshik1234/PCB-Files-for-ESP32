@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13,7 +13,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
@@ -5252,63 +5252,6 @@ LED</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SMT_small_antenna">
-<packages>
-<package name="ANTC3216X140N">
-<wire x1="-1.7" y1="0.9" x2="1.7" y2="0.9" width="0.127" layer="51"/>
-<wire x1="1.7" y1="0.9" x2="1.7" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="1.7" y1="-0.9" x2="-1.7" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="-0.9" x2="-1.7" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="1.09" x2="1.6" y2="1.09" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.09" x2="1.6" y2="-1.09" width="0.127" layer="21"/>
-<wire x1="-2.31" y1="1.16" x2="2.31" y2="1.16" width="0.05" layer="39"/>
-<wire x1="2.31" y1="1.16" x2="2.31" y2="-1.16" width="0.05" layer="39"/>
-<wire x1="2.31" y1="-1.16" x2="-2.31" y2="-1.16" width="0.05" layer="39"/>
-<wire x1="-2.31" y1="-1.16" x2="-2.31" y2="1.16" width="0.05" layer="39"/>
-<text x="-2.54383125" y="2.54383125" size="1.271909375" layer="25">&gt;NAME</text>
-<text x="-2.5411" y="-2.5411" size="1.27055" layer="27" align="top-left">&gt;VALUE</text>
-<circle x="-2.7" y="0" radius="0.1" width="0.2" layer="21"/>
-<smd name="1" x="-1.46" y="0" dx="1.2" dy="1.82" layer="1" roundness="25" rot="R180"/>
-<smd name="2" x="1.46" y="0" dx="1.2" dy="1.82" layer="1" roundness="25" rot="R180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="2450AT18A100E">
-<wire x1="2.413" y1="8.001" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.667" y2="8.001" width="0.254" layer="94"/>
-<wire x1="0" y1="8.001" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<text x="-2.79265" y="10.1861" size="1.27523125" layer="95">&gt;NAME</text>
-<text x="-2.66091875" y="-10.1575" size="1.273009375" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2450AT18A100E" prefix="AE">
-<description>ANTENNA, CERAMIC, 2.45GHZ; Bandwidth: 100MHz; Frequency: 2.45GHz; Gain: -0.5dB; Impedance: 50ohm</description>
-<gates>
-<gate name="G$1" symbol="2450AT18A100E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ANTC3216X140N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" 2.4GHz Chip RF Antenna 2.4GHz ~ 2.5GHz 0.5dBi Solder Surface Mount "/>
-<attribute name="MF" value="Johanson Technology"/>
-<attribute name="MP" value="2450AT18A100E"/>
-<attribute name="PACKAGE" value="FBGA-780 Johanson"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="testpad" urn="urn:adsk.eagle:library:385">
 <description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
 Cream on SMD OFF.&lt;br&gt;
@@ -6489,6 +6432,180 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="INDC0402X22N">
+<packages>
+<package name="INDC0402X22N">
+<text x="-0.62" y="-0.46" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-0.62" y="0.46" size="0.5" layer="25">&gt;NAME</text>
+<circle x="-0.869" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-0.869" y="0" radius="0.1" width="0.2" layer="51"/>
+<wire x1="0.21" y1="-0.11" x2="-0.21" y2="-0.11" width="0.127" layer="51"/>
+<wire x1="0.21" y1="0.11" x2="-0.21" y2="0.11" width="0.127" layer="51"/>
+<wire x1="0.21" y1="-0.11" x2="0.21" y2="0.11" width="0.127" layer="51"/>
+<wire x1="-0.21" y1="-0.11" x2="-0.21" y2="0.11" width="0.127" layer="51"/>
+<wire x1="-0.619" y1="-0.399" x2="0.619" y2="-0.399" width="0.05" layer="39"/>
+<wire x1="-0.619" y1="0.399" x2="0.619" y2="0.399" width="0.05" layer="39"/>
+<wire x1="-0.619" y1="-0.399" x2="-0.619" y2="0.399" width="0.05" layer="39"/>
+<wire x1="0.619" y1="-0.399" x2="0.619" y2="0.399" width="0.05" layer="39"/>
+<smd name="1" x="-0.222" y="0" dx="0.29" dy="0.3" layer="1"/>
+<smd name="2" x="0.222" y="0" dx="0.29" dy="0.3" layer="1"/>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+<deviceset name="INDC0402X22N" prefix="L">
+<gates>
+</gates>
+<devices>
+<device name="" package="INDC0402X22N">
+<technologies>
+<technology name="">
+<attribute name="A_MAX" value="0.22"/>
+<attribute name="A_MIN" value="0.22"/>
+<attribute name="A_NOM" value="0.22"/>
+<attribute name="D_MAX" value="0.42"/>
+<attribute name="D_MIN" value="0.38"/>
+<attribute name="D_NOM" value="0.4"/>
+<attribute name="E_MAX" value="0.22"/>
+<attribute name="E_MIN" value="0.18"/>
+<attribute name="E_NOM" value="0.2"/>
+<attribute name="L1_MAX" value="0.12"/>
+<attribute name="L1_MIN" value="0.07"/>
+<attribute name="L1_NOM" value="0.095"/>
+<attribute name="L_MAX" value="0.12"/>
+<attribute name="L_MIN" value="0.07"/>
+<attribute name="L_NOM" value="0.095"/>
+<attribute name="MANUFACTURER" value="Murata"/>
+<attribute name="STANDARD" value="IPC 7351B"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="L-07C2N7SV6T">
+<description>&lt;JOHANSON TECHNOLOGY - L-07C2N7SV6T - INDUCTOR RF, 2.7NH, +/-0.3NH, 0402&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="INDC1005X60N">
+<description>&lt;b&gt;L-07C2N7SV6T-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.55" y="0" dx="0.75" dy="0.65" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.75" dy="0.65" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.175" y1="0.6" x2="1.175" y2="0.6" width="0.05" layer="51"/>
+<wire x1="1.175" y1="0.6" x2="1.175" y2="-0.6" width="0.05" layer="51"/>
+<wire x1="1.175" y1="-0.6" x2="-1.175" y2="-0.6" width="0.05" layer="51"/>
+<wire x1="-1.175" y1="-0.6" x2="-1.175" y2="0.6" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
+<wire x1="0" y1="0.15" x2="0" y2="-0.15" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L-07C2N7SV6T">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="L-07C2N7SV6T" prefix="L">
+<description>&lt;b&gt;JOHANSON TECHNOLOGY - L-07C2N7SV6T - INDUCTOR RF, 2.7NH, +/-0.3NH, 0402&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.johansontechnology.com/downloads/jti-cat-rf-ind.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L-07C2N7SV6T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDC1005X60N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="JOHANSON TECHNOLOGY - L-07C2N7SV6T - INDUCTOR RF, 2.7NH, +/-0.3NH, 0402" constant="no"/>
+<attribute name="HEIGHT" value="0.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="JOHANSON TECHNOLOGY" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="L-07C2N7SV6T" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="609-L-07C2N7SV6T" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=609-L-07C2N7SV6T" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SMT_small_antenna">
+<packages>
+<package name="ANTC3216X140N">
+<wire x1="-1.7" y1="0.9" x2="1.7" y2="0.9" width="0.127" layer="51"/>
+<wire x1="1.7" y1="0.9" x2="1.7" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1.7" y1="-0.9" x2="-1.7" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-0.9" x2="-1.7" y2="0.9" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.09" x2="1.6" y2="1.09" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.09" x2="1.6" y2="-1.09" width="0.127" layer="21"/>
+<wire x1="-2.31" y1="1.16" x2="2.31" y2="1.16" width="0.05" layer="39"/>
+<wire x1="2.31" y1="1.16" x2="2.31" y2="-1.16" width="0.05" layer="39"/>
+<wire x1="2.31" y1="-1.16" x2="-2.31" y2="-1.16" width="0.05" layer="39"/>
+<wire x1="-2.31" y1="-1.16" x2="-2.31" y2="1.16" width="0.05" layer="39"/>
+<text x="-2.54383125" y="2.54383125" size="1.271909375" layer="25">&gt;NAME</text>
+<text x="-2.5411" y="-2.5411" size="1.27055" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-2.7" y="0" radius="0.1" width="0.2" layer="21"/>
+<smd name="1" x="-1.46" y="0" dx="1.2" dy="1.82" layer="1" roundness="25" rot="R180"/>
+<smd name="2" x="1.46" y="0" dx="1.2" dy="1.82" layer="1" roundness="25" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="2450AT18A100E">
+<wire x1="2.413" y1="8.001" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.667" y2="8.001" width="0.254" layer="94"/>
+<wire x1="0" y1="8.001" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<text x="-2.79265" y="10.1861" size="1.27523125" layer="95">&gt;NAME</text>
+<text x="-2.66091875" y="-10.1575" size="1.273009375" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="-5.08" visible="pad" length="short" direction="in" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2450AT18A100E" prefix="AE">
+<description>ANTENNA, CERAMIC, 2.45GHZ; Bandwidth: 100MHz; Frequency: 2.45GHz; Gain: -0.5dB; Impedance: 50ohm</description>
+<gates>
+<gate name="G$1" symbol="2450AT18A100E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ANTC3216X140N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" 2.4GHz Chip RF Antenna 2.4GHz ~ 2.5GHz 0.5dBi Solder Surface Mount "/>
+<attribute name="MF" value="Johanson Technology"/>
+<attribute name="MP" value="2450AT18A100E"/>
+<attribute name="PACKAGE" value="FBGA-780 Johanson"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6512,7 +6629,6 @@ by exp-lbrs.ulp</description>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="150"/>
 <part name="RX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP14SQ" package3d_urn="urn:adsk.eagle:package:27984/1"/>
 <part name="TX" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP14SQ" package3d_urn="urn:adsk.eagle:package:27984/1"/>
-<part name="ANT" library="SMT_small_antenna" deviceset="2450AT18A100E" device=""/>
 <part name="VCC" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP14SQ" package3d_urn="urn:adsk.eagle:package:27984/1"/>
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP14SQ" package3d_urn="urn:adsk.eagle:package:27984/1"/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -6524,6 +6640,10 @@ by exp-lbrs.ulp</description>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/2" value="10K"/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="ORANGE" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="LED-ORANGE" device="0603" package3d_urn="urn:adsk.eagle:package:5829998/10"/>
+<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0402-16V-10%" package3d_urn="urn:adsk.eagle:package:37413/1" value="1pF"/>
+<part name="L2.7" library="L-07C2N7SV6T" deviceset="L-07C2N7SV6T" device="" value="2.7nH"/>
+<part name="L3.9" library="L-07C2N7SV6T" deviceset="L-07C2N7SV6T" device="" value="3.9nH"/>
+<part name="ANT" library="SMT_small_antenna" deviceset="2450AT18A100E" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6580,10 +6700,6 @@ by exp-lbrs.ulp</description>
 <instance part="TX" gate="G$1" x="58.42" y="60.96" smashed="yes">
 <attribute name="NAME" x="57.15" y="62.23" size="1.778" layer="95"/>
 </instance>
-<instance part="ANT" gate="G$1" x="93.98" y="43.18" smashed="yes">
-<attribute name="NAME" x="91.18735" y="53.3661" size="1.27523125" layer="95"/>
-<attribute name="VALUE" x="86.23908125" y="35.5625" size="1.273009375" layer="96"/>
-</instance>
 <instance part="VCC" gate="G$1" x="-22.86" y="86.36" smashed="yes">
 <attribute name="NAME" x="-24.13" y="87.63" size="1.778" layer="95"/>
 </instance>
@@ -6612,11 +6728,24 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="56.9214" y="39.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="61.722" y="39.37" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="58.42" y="53.34" smashed="yes">
-<attribute name="VALUE" x="55.88" y="48.26" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V6" gate="G$1" x="58.42" y="50.8" smashed="yes">
+<attribute name="VALUE" x="55.88" y="45.72" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="ORANGE" gate="G$1" x="66.04" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.612" y="100.076" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="C1" gate="G$1" x="91.44" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="88.519" y="54.864" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="92.456" y="50.419" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="L2.7" gate="G$1" x="99.06" y="53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="97.79" y="44.45" size="1.778" layer="95" rot="R270" align="center-left"/>
+</instance>
+<instance part="L3.9" gate="G$1" x="104.14" y="53.34" smashed="yes">
+<attribute name="NAME" x="110.49" y="52.07" size="1.778" layer="95" align="center-left"/>
+</instance>
+<instance part="ANT" gate="G$1" x="127" y="58.42" smashed="yes">
+<attribute name="NAME" x="124.20735" y="68.6061" size="1.27523125" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -6650,15 +6779,6 @@ by exp-lbrs.ulp</description>
 <wire x1="5.08" y1="53.34" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="40.64" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
 <junction x="5.08" y="48.26"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="LNA_IN"/>
-<wire x1="53.34" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="ANT" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="38.1" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6739,6 +6859,10 @@ by exp-lbrs.ulp</description>
 <wire x1="53.34" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="7.62" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="ORANGE" gate="G$1" pin="C"/>
+<pinref part="L2.7" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="33.02" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-2.54" x2="76.2" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="76.2" y="-2.54"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -6795,13 +6919,36 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="58.42" y1="48.26" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="ORANGE" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<wire x1="53.34" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="LNA_IN"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="L3.9" gate="G$1" pin="2"/>
+<wire x1="127" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="ANT" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="L2.7" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="L3.9" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<junction x="99.06" y="53.34"/>
 </segment>
 </net>
 </nets>
@@ -6820,7 +6967,6 @@ by exp-lbrs.ulp</description>
 <approved hash="104,1,53.34,66.04,U1,VDD_SDIO,+3V3,,,"/>
 <approved hash="104,1,53.34,63.5,U1,VDD3P3_CPU,+3V3,,,"/>
 <approved hash="108,1,55.88,-2.54,GND,,,,,"/>
-<approved hash="111,1,58.42,53.34,N$4,,,,,"/>
 <approved hash="113,1,66.04,37.3126,BOOT/IO0,,,,,"/>
 <approved hash="113,1,-2.54,42.3926,RESET/EN,,,,,"/>
 </errors>
